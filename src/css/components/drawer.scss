@@ -1,0 +1,44 @@
+.drawer {
+  @apply fixed
+    z-40
+    h-screen
+    p-4
+    overflow-y-auto
+    bg-rose-50
+    text-gray-700
+    w-80;
+
+  button {
+    &.close {
+      @apply bg-transparent
+      hover:text-rose-700
+      rounded-lg
+      text-sm
+      p-1.5
+      absolute
+      top-2.5
+      right-2.5
+      inline-flex
+      items-center;
+    }
+  }
+
+  .drawer--title {
+    @apply inline-flex items-center mb-4 text-base font-semibold;
+  }
+
+  .drawer--link,
+  .drawer--dropdown-button {
+    @apply flex items-center py-2 hover:bg-rose-100 hover:text-rose-700;
+  }
+
+  .drawer--dropdown-button {
+    @apply w-full py-2 transition duration-75;
+  }
+
+  .drawer--dropdown {
+    .drawer--link {
+      @apply flex items-center w-full py-2 transition duration-75 pl-8;
+    }
+  }
+}

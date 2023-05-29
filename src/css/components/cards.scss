@@ -1,0 +1,63 @@
+.card {
+  @apply max-w-full
+    h-full
+    m-auto
+    border
+    border-gray-200
+    bg-white
+    rounded-lg
+    shadow-md
+    flex
+    flex-col;
+
+  .image-wrapper {
+    @apply bg-neutral-400
+      rounded-t-lg;
+
+    img {
+      @apply w-full
+        rounded-t-lg;
+    }
+  }
+
+  .card-content {
+    @apply py-6 px-8
+      h-full
+      bg-white
+      flex
+      flex-col
+      justify-between
+      items-center;
+
+    h3 {
+      @apply mb-2
+        text-2xl
+        font-bold
+        tracking-tight
+        text-gray-700;
+    }
+
+    p {
+      @apply mb-6
+        font-normal
+        text-gray-700;
+    }
+
+    .card-content--footer {
+      @apply w-full
+        pt-6
+        border-t
+        border-neutral-100
+        text-center
+        flex
+        gap-4
+        flex-wrap
+        justify-center
+        items-center;
+
+      .btn {
+        @apply text-sm;
+      }
+    }
+  }
+}

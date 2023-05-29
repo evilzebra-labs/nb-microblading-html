@@ -1,0 +1,33 @@
+a,
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  &.btn {
+    @apply text-brandLighter
+    bg-brandSecondary
+    hover:bg-brandSecondaryHover
+    text-base
+    font-medium
+    uppercase
+    tracking-wider
+    rounded-lg
+    inline-flex
+    items-center
+    px-5
+    py-2.5
+    transition;
+
+    &.btn-primary {
+      @apply bg-brandPrimary;
+      @apply hover:bg-brandPrimaryHover;
+    }
+
+    &.btn-secondary {
+      @apply bg-grapeExpectations-400
+      text-white;
+
+      @apply hover:bg-grapeExpectations-500;
+    }
+  }
+}

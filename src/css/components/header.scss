@@ -1,0 +1,103 @@
+.main-navigation {
+  @apply fixed
+    w-full
+    top-0
+    transition-colors
+    z-40
+    duration-300;
+
+  .navbar {
+    @apply py-[.5rem]
+      lg:py-[1rem]
+      bg-transparent;
+    a,
+    button {
+      @apply text-white
+        transition-colors
+        hover:text-rose-200;
+    }
+
+    .dropdown {
+      @apply bg-rose-50
+        bg-opacity-20
+        text-white;
+
+      a {
+        @apply hover:bg-rose-50
+          hover:bg-opacity-20
+          hover:text-white;
+      }
+    }
+  }
+
+  .logo {
+    @apply max-w-[6rem]
+      lg:max-w-[8rem];
+
+    svg {
+      @apply w-full h-full;
+      .fill {
+        @apply fill-gray-100;
+      }
+      .fill-reverse {
+        @apply fill-gray-800;
+      }
+      .stroke {
+        @apply fill-gray-100;
+      }
+    }
+  }
+
+  .menu > :where(li:hover) > :where(ul) {
+    @apply bg-pink-50
+      lg:bg-opacity-20
+      md:text-neutral-600
+      lg:text-white;
+  }
+
+  &.scrolled {
+    @apply bg-pink-50
+      shadow-md;
+
+    .navbar {
+      a,
+      button {
+        @apply text-neutral-600
+          hover:text-rose-700;
+      }
+
+      .dropdown {
+        @apply bg-pink-50
+          shadow-md;
+
+        a {
+          @apply hover:bg-rose-200
+            hover:bg-opacity-20;
+        }
+      }
+    }
+
+    .logo {
+      svg {
+        @apply w-full h-full;
+        .fill {
+          @apply fill-gray-700;
+        }
+        .fill-reverse {
+          @apply fill-gray-100;
+        }
+        .stroke {
+          @apply fill-gray-700;
+        }
+      }
+    }
+
+    .menu > :where(li:hover) > :where(ul) {
+      @apply bg-pink-200;
+    }
+  }
+}
+
+.drawer-toggle:checked ~ .drawer-content {
+  transform: none;
+}

@@ -1,0 +1,38 @@
+section.contact {
+  @apply py-20 relative bg-rose-200
+    bg-[url(../img/stars-bg.svg)]
+    bg-cover
+    bg-top
+    backdrop-blur-sm;
+
+  &:before {
+    content: '';
+    @apply block absolute w-full h-20 top-0 left-0
+    bg-[url(../img/contact-bg-top.svg)]
+    bg-no-repeat
+    bg-top;
+  }
+
+  .card {
+    @apply flex
+      flex-col
+      justify-center
+      w-full
+      h-full
+      py-5
+      px-5
+      bg-grapeExpectations-600
+      text-white
+      shadow-xl
+      backdrop-blur-lg
+      bg-opacity-60;
+
+    backdrop-filter: blur(2px);
+    // background-color: rgba(82, 73, 103, 0.7);
+    border: 1px solid rgba(82, 73, 103, 0.7);
+
+    p {
+      @apply flex items-center gap-4 text-sm md:text-base mb-5 last:mb-0;
+    }
+  }
+}

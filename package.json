@@ -1,0 +1,45 @@
+{
+  "name": "nb-microblading-html",
+  "version": "1.0.0",
+  "description": "",
+  "source": [
+    "src/index.html",
+    "src/servicios/microblading/index.html",
+    "src/servicios/micropigmentacion/index.html",
+    "src/servicios/extension-de-pestanas/index.html",
+    "src/servicios/peeling/index.html"
+  ],
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "hint": "^7.1.8",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.23",
+    "posthtml": "^0.16.6",
+    "posthtml-extend": "^0.6.5",
+    "posthtml-include": "^1.7.4",
+    "stylelint": "^15.6.1",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-scss": "^5.0.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evilzebra-labs/nb-microblading-html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evilzebra-labs/nb-microblading-html/issues"
+  },
+  "homepage": "https://github.com/evilzebra-labs/nb-microblading-html#readme",
+  "dependencies": {
+    "flowbite": "^1.6.5"
+  }
+}

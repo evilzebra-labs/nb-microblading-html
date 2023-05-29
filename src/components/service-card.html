@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="image-wrapper">
+    <a href="{{ url }}">
+      <img src="{{ imgSrc }}" alt="{{ name }}" />
+    </a>
+  </div>
+  <div class="card-content">
+    <div class="card-content--top">
+      <a href="{{ url }}">
+        <h3>{{ name }}</h3>
+      </a>
+      <p>{{ content }}</p>
+    </div>
+    <div class="card-content--footer">
+      <a href="{{ url }}" class="btn btn-secondary">
+        Ver servicio
+        <include src="components/icons/right-arrow.svg">{ "class": "w-4 h-4 ml-2 -mr-1" }</include>
+      </a>
+
+      <a href="https://api.whatsapp.com/send?phone=5492616138845&text=Quiero%20reservar%20turno%20para%20{{name}}" target="_blank" rel="noopener" class="btn btn-secondary">
+        Reserva turno
+        <include src="components/icons/whatsapp.svg">{ "class": "w-5 h-5 ml-2 -mr-1" }</include>
+      </a>
+    </div>
+  </div>
+</div>

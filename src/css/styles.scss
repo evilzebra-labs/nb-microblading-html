@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    @apply min-h-full;
+  }
+  body {
+    @apply bg-rose-50 text-gray-700 min-h-full;
+  }
+}
+
+@import './global.scss';
+@import 'components/header.scss';
+@import 'components/drawer.scss';
+@import 'components/hero.scss';
+@import 'components/buttons.scss';
+@import 'components/cards.scss';
+
+@import 'sections/contact.scss';
+@import 'pages/microblading.scss';
