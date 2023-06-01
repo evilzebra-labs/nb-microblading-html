@@ -14,7 +14,9 @@
     "build": "parcel build"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "hint": "^7.1.8",
