@@ -19,5 +19,15 @@
         @apply text-gray-300;
       }
     }
+
+    &:after {
+      @apply bg-none;
+    }
+  }
+
+  section.contact {
+    &:before {
+      @apply bg-none;
+    }
   }
 }
