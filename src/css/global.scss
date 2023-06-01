@@ -3,7 +3,106 @@ section {
     @apply pt-20 py-16;
 
     h2 {
-      @apply mb-12 text-4xl text-center font-semibold leading-none md:text-5xl;
+      @apply mb-12 text-2xl text-center font-semibold leading-none md:text-5xl;
     }
+  }
+
+  &.intro {
+    @apply bg-rose-50
+      py-20
+      bg-[url(../img/lines-bg.svg)];
+
+    .card {
+      @apply p-5
+      items-center
+        flex
+        flex-row
+        shadow-none
+        border-[2px]
+        border-pink-500
+        bg-white
+        bg-opacity-30
+        md:text-lg
+        rounded-tl-[20px]
+        rounded-tr-[6px]
+        rounded-bl-[6px]
+        rounded-br-[20px]
+        text-center;
+
+      &.intro {
+        @apply items-center
+          shadow-none
+          border-none
+          text-gray-700
+          p-0
+          bg-transparent;
+
+        h3 {
+          @apply items-center
+            text-xl
+            md:text-2xl
+            font-semibold
+            text-center
+            p-8
+            max-w-2xl mx-auto
+            shadow-none
+            border-[4px]
+            border-pink-600
+            rounded-tl-[30px]
+            rounded-tr-[60px]
+            rounded-bl-[60px]
+            lg:rounded-tl-[40px]
+            lg:rounded-tr-[100px]
+            lg:rounded-bl-[100px]
+            rounded-br-none
+            bg-white
+            bg-opacity-30
+            rounded;
+          backdrop-filter: blur(2px);
+        }
+      }
+    }
+  }
+
+  &.info {
+    @apply bg-grapeExpectations-500
+      py-28
+      relative
+      text-gray-200;
+
+    h2 {
+      @apply text-gray-200;
+    }
+
+    p.intro {
+      @apply text-lg text-center max-w-2xl mx-auto;
+    }
+
+    &:before {
+      content: '';
+      @apply block absolute w-full h-20 top-0 left-0
+        bg-[url(../img/microblading/info-bg-top.svg)]
+        bg-no-repeat
+        bg-top;
+    }
+
+    &:after {
+      content: '';
+      @apply block absolute w-full h-20 bottom-0 left-0
+        bg-[url(../img/microblading/info-bg-bottom.svg)]
+        bg-no-repeat
+        bg-bottom
+        rotate-180;
+    }
+  }
+
+  &.steps {
+    @apply bg-rose-200
+      py-20
+      relative;
+  }
+
+  &.more-info {
+    @apply py-40;
   }
 }

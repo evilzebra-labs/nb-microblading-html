@@ -1,0 +1,23 @@
+.micropigmentacion {
+  section.info {
+    ol {
+      @apply space-y-1 list-decimal list-inside md:text-justify;
+      li {
+        @apply text-gray-300 mb-2;
+      }
+    }
+    .tipo {
+      @apply border
+        border-gray-400
+        rounded-lg
+        p-5
+        text-center
+        mb-6
+        max-w-sm mx-auto;
+
+      p {
+        @apply text-gray-300;
+      }
+    }
+  }
+}

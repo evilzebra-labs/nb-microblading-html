@@ -1,186 +1,100 @@
-section.microblading-intro {
-  @apply bg-rose-50
-    py-20
-    bg-[url(../img/lines-bg.svg)];
-
-  .card {
-    @apply p-5
-    items-center
-      flex
-      flex-row
-      shadow-none
-      border-[6px]
-      border-pink-500
-      bg-white
-      bg-opacity-30
-      md:text-lg
-      rounded-tl-[20px]
-      rounded-tr-[6px]
-      rounded-bl-[6px]
-      rounded-br-[20px]
-      text-center;
-
-    &.intro {
-      @apply items-center
-        shadow-none
-        border-none
-        text-gray-700
-        p-0
-        bg-transparent;
-
-      h3 {
-        @apply items-center
-          text-xl
-          md:text-2xl
-          font-semibold
-          text-center
-          p-8
-          max-w-2xl mx-auto
-          shadow-none
-          border-[6px]
-          border-pink-600
-          rounded-tl-[40px]
-          rounded-tr-[100px]
-          rounded-bl-[100px]
-          rounded-br-none
-          bg-white
-          bg-opacity-30
-          rounded;
-        backdrop-filter: blur(2px);
-      }
-    }
-  }
-}
-
-section.steps {
-  @apply bg-rose-200
-    py-20
-    relative;
-
-  .step-number {
-    @apply absolute
-    inline-flex
-    items-center
-    justify-center
-    w-10
-    h-10
-    text-lg
-    font-bold
-    text-white
-    bg-pink-700
-    border-2
-    border-rose-50
-    rounded-full
-    -translate-y-1/2
-    translate-x-1/2
-    right-1/2
-    top-0;
-  }
-
-  .step {
-    @apply relative
-      grid
-      grid-cols-1
-      md:grid-cols-3
-      gap-0
-      md:gap-8
+.microblading {
+  section.steps {
+    .step-number {
+      @apply absolute
+      inline-flex
       items-center
       justify-center
-      bg-rose-50
-      shadow-lg
-      md:py-8
-      md:px-8
+      w-10
+      h-10
+      text-lg
+      font-bold
+      text-white
+      bg-pink-700
+      border-2
+      border-rose-50
+      rounded-full
+      -translate-y-1/2
+      translate-x-1/2
+      right-1/2
+      top-0;
+    }
 
-      rounded-lg;
+    .step {
+      @apply relative
+        grid
+        grid-cols-1
+        md:grid-cols-3
+        gap-0
+        md:gap-8
+        items-center
+        justify-center
+        bg-rose-50
+        shadow-lg
+        md:py-8
+        md:px-8
 
-    &.reverse {
+        rounded-lg;
+
+      &.reverse {
+        img {
+          @apply md:order-last;
+        }
+      }
+
       img {
-        @apply md:order-last;
+        @apply w-full
+          rounded-lg
+          md:w-[400px]
+          mx-auto;
       }
-    }
 
-    img {
-      @apply w-full
-        rounded-lg
-        md:w-[400px]
-        mx-auto;
-    }
+      .content {
+        @apply md:col-span-2
+        p-8
+        md:p-0;
 
-    .content {
-      @apply md:col-span-2
-      p-8
-      md:p-0;
-
-      p {
-        @apply text-base
-        lg:text-lg
-        text-gray-700
-        mb-3
-        last-of-type:mb-0;
+        p {
+          @apply text-base
+          lg:text-lg
+          text-gray-700
+          mb-3
+          last-of-type:mb-0;
+        }
       }
     }
   }
-}
 
-section.info {
-  @apply bg-grapeExpectations-500
-    py-28
-    relative
-    text-gray-200;
+  section.info {
+    .rostro {
+      @apply flex
+        flex-col
+        sm:flex-row
+        gap-3
+        sm:gap-6
+        items-start
+        xl:items-center
+        mt-10
+        sm:first-of-type:mt-0;
 
-  h2 {
-    @apply text-gray-200;
-  }
-
-  p.intro {
-    @apply text-lg text-center max-w-2xl mx-auto;
-  }
-
-  &:before {
-    content: '';
-    @apply block absolute w-full h-20 top-0 left-0
-      bg-[url(../img/microblading/info-bg-top.svg)]
-      bg-no-repeat
-      bg-top;
-  }
-
-  &:after {
-    content: '';
-    @apply block absolute w-full h-20 bottom-0 left-0
-      bg-[url(../img/microblading/info-bg-bottom.svg)]
-      bg-no-repeat
-      bg-bottom
-      rotate-180;
-  }
-
-  .rostro {
-    @apply flex
-      flex-col
-      sm:flex-row
-      gap-3
-      sm:gap-6
-      items-start
-      xl:items-center
-      mt-10
-      sm:first-of-type:mt-0;
-
-    img {
-      @apply max-w-[150px]
-        mx-auto;
-    }
-
-    .content {
-      @apply text-center
-        sm:text-left;
-
-      h4 {
-        @apply text-xl
-          font-semibold
-          mb-3;
+      img {
+        @apply max-w-[150px]
+          mx-auto;
       }
 
-      p {
-        @apply text-base;
+      .content {
+        @apply text-center
+          sm:text-left;
+
+        h4 {
+          @apply text-xl
+            font-semibold
+            mb-3;
+        }
+
+        p {
+          @apply text-base;
+        }
       }
     }
   }

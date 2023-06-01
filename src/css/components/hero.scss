@@ -40,7 +40,9 @@
   }
 
   &.hero-microblading {
-    @apply bg-[url(../img/microblading/hero-bg.png)];
+    @apply bg-[url(../img/microblading/hero-bg.png)]
+      bg-center
+      md:bg-right;
 
     .hero-content {
       h1 {
@@ -50,11 +52,37 @@
   }
 
   &.hero-micropigmentacion {
-    @apply bg-[url(../img/microblading/hero-bg.png)];
+    @apply bg-[url(../img/micropigmentacion/hero-bg.png)]
+      bg-center
+      md:bg-right;
 
     .hero-content {
       h1 {
-        @apply text-4xl sm:text-6xl;
+        @apply text-3xl sm:text-5xl md:text-6xl;
+      }
+    }
+  }
+
+  &.hero-extensiones {
+    @apply bg-[url(../img/extensiones/hero-bg.png)]
+      bg-center
+      md:bg-right;
+
+    .hero-content {
+      h1 {
+        @apply text-3xl sm:text-5xl md:text-6xl;
+      }
+    }
+  }
+
+  &.hero-peeling {
+    @apply bg-[url(../img/peeling/hero-bg.png)]
+      bg-center
+      md:bg-right;
+
+    .hero-content {
+      h1 {
+        @apply text-3xl sm:text-5xl md:text-6xl;
       }
     }
   }
